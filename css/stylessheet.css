@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'poppins' , sans-serif;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 .topbar{
     position: fixed;
     background: #9cf6df;
@@ -22,7 +26,7 @@
 }
 .search-container {
     position: relative; /* Essential for positioning the icon */
-    left:700px;
+    left:650px;
     display: inline-block; /* Or block, depending on your layout */
 
     
@@ -32,8 +36,8 @@
     padding-left: 30px; /* Adjust this value to accommodate the icon width */
     width: 200px; /* Or whatever width you need */
     box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
-    padding-left: 10px; /* Adjust if you still need some space on the left */
-  padding-right: 60px; /* Make space on the right for the icon */
+    padding-left: 5px; /* Adjust if you still need some space on the left */
+  padding-right: 30px; /* Make space on the right for the icon */
   background-position: right 5px 
   }
   
@@ -52,9 +56,14 @@
     width: 20px; /* Adjust icon size as needed */
     height: 20px;
   }
+  #fas{
+    position: absolute;
+    left: 1090px;
+  }
 
 .user{
-    position: relative;
+    position: absolute;
+    left: 1200px;
     width: 50px;
     height: 50px;
     
@@ -62,10 +71,145 @@
 .user img{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1200;
     height: 100%;
     width: 100%;
     object-fit: cover;
 
 }
-/* side bar settings are here/*
+/* side bar settings are here*/
+.sidebar{
+    position: fixed;
+    top: 60px;
+    width: 230px;
+    height: calc(100% - 60px);
+    background: #299863;
+    overflow-x: hidden;
+
+}
+.sidebar ul {
+    margin-top:20px
+}
+.sidebar ul li {
+    width: 100%;
+    list-style: none;
+
+}
+.sidebar ul li:hover {
+    background: #e8ecea;
+}
+.sidebar ul li:hover a {
+    color: #237b2b;
+}
+.sidebar ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+.sidebar ul li a i {
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+.main{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: calc(100% - 260px);
+    left: 240px;
+    min-height: calc(100vh - 60px);
+    background: #f5f5f5;
+}
+.cards{
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:20px
+    
+
+}
+.cards .card{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+
+}
+.cards .card:hover{
+    background: #2f8436;
+}
+.cards .card:hover .number{
+    color: #fff;
+}
+.cards .card:hover .card-name{
+    color: #fff;
+}
+.cards .card:hover .icon-box i {
+    color: #fff;
+}
+
+.number{
+    font-size: 35px;
+    font-weight: 500;
+    color: #299863;
+}
+.card-name{
+    color: #8888;
+    font-weight: 600; 
+}
+.icon-box i{
+    font-size: 45px;
+    color: #299863;
+}
+.charts{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    padding-top: 0;
+}
+.chart{
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+@media (max-width:1115px) {
+    .sidebar{
+        width: 60px;
+    }
+    .main{
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+}
+@media (max-width:1115px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards{
+        width: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding-top: 0;
+    }
+}
+#products{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: calc(100% - 260px);
+    left: 240px;
+    min-height: calc(100vh - 60px);
+    background: #f5f5f5;
+}
