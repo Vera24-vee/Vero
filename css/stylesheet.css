@@ -1,0 +1,22 @@
+#main{
+    margin-top: 200px;
+}
+#loginCard {
+    /* background-color: rgb(225, 223, 221); */
+}
+.bg-success {
+    --bs-bg-opacity: 50%;
+    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+#dashboard-container {
+    margin-top: 10px;
+}
+
+.kgl-headers {
+    background-color: rgb(75, 184, 122);
+}
+.img-thumbnail{
+    width: 200px;
+    height: 200px;
+}
