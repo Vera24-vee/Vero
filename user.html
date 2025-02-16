@@ -2,100 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap-5.3.3/css/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet" href="css/stylessheet.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css//bootstrap-5.3.3/css/bootstrap.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Products</title>
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="topbar">
-            <div class="logo">
-                <h4><b>KGL GROCCERIES</b></h4>
+<body style="background-image: url('images/varieties.jpg'); background-size: cover;"></body>
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header text kgl-headers">
+                        <h4>Menu</h4>
+                    </div>
+                    <div class="card-body bg-success">
+                        <ul class="list-group ">
+                            <li class="list-group-item"><a href="/dashboard.html">Dashboard</a></li>
+                            <li class="list-group-item">Companies</li>
+                            <li class="list-group-item"><a href="/user.html">users</a></li>
+                            <li class="list-group-item"> <a href="/products2.html">Products</a></li>
+                            <li class="list-group-item">Payments</li>
+                            <li class="list-group-item">Sales</li>
+                            <li class="list-group-item"><a href="/index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="search-container">
-                <input type="text" placeholder="search here" class="search-input">
-                <button type="submit" class="search-icon">
-                  <img src="images/search icon.png" alt=""> 
-                </button>
+            <div class="col-md-9">
+                <h1 class="text-success">USERS</h1>
+                <div class="row">
+                    
+                    <div class="card-body">
+                        <table tableborder="1" style="border-collapse: collapse" class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Branch</th>
+                                <th scope="col">Manager</th>
+                                <th scope="col">Attendant</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Matugga</td>
+                                <td>Mr. Glen Johnson</td>
+                                <td>Mr.Living Stone<br>
+                                    Ms.Rachael Ankunda
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Maganjo</td>
+                                <td>Mr. Gilbert Stevens</td>
+                                <td>Mr. Robbinson Clark<br>
+                                    Ms. Nicole Immaculate</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
               
+                   
             </div>
-            <i class="fas fa-bell" id="fas"></i>
-            <div class="user">
-            <img src="images/usersz.png" alt="">
-            </div>
-            <div class="sidebar">
-                <ul>
-                    <li>
-                        <a href="dash.html">
-                            <i class="fas fa-th-large"></i>
-                            <div>Dashboaard</div>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>Branches
-                                
-                            </div>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="user.html">
-                            <i class="fas fa-users"></i>
-                            <div>
-                                Users
-                            </div>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-chart-line"></i>
-                            <div>Sales</div>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-credit-card"></i>
-                            <div>Payments</div>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="products2.html">
-                            <i class="fas fa-box"></i>
-                            <div>
-                                Products>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-building"></i>
-                            <div>Company</div>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <i class="fas fa-solid fa-right-from-bracket"></i>
-                            <div>Log out</div>
-                        </a>
-
-                    </li>
-                </ul>
-            </div>
+           
         </div>
-        <
-       
     </div>
+</body>
+</html>
 
 
     <scrip src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js></script>

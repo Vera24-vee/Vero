@@ -1,6 +1,7 @@
 #main{
     margin-top: 200px;
 }
+
 #loginCard {
      background-color: rgb(225, 223, 221); 
 }
@@ -15,6 +16,26 @@
 
 .kgl-headers {
     background-color: rgb(75, 184, 122);
+}
+.card-body ul li:hover {
+    background: #5fa783;
+}
+.card-body ul li:hover a {
+    color: #237b2b;
+}
+.card-body ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: #151313;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+.card-body ul li a i {
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
 }
 .img-thumbnail{
     width: 200px;
@@ -106,4 +127,11 @@
 	background-repeat: no-repeat;
     background-size: cover;
     color: #eee;
+  }
+  .card-header {
+    color: green;
+    background: #e9e3e3;
+  }
+  .card-header:hover {
+    color: rgb(141, 121, 121);
   }
