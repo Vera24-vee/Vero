@@ -1,55 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap-5.3.3/css/bootstrap.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>Profile Update</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-image: url(/images/beansplus.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper{
+	width: 800px;
+	height: 500px;
+	background: green;
+	padding: 10px;
+	margin: 100px auto;
+	box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+	border-bottom-right-radius: 80px;
+	border-top-left-radius: 80px;
+	border: 1px solid rgb(139, 83, 73)
 
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <title>Document</title>
+
+}
+.rounded-image {
+  width: 150px; /* Set your desired width */
+  height: 150px; /* Set your desired height (must be equal to width for a circle) */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Important: maintains aspect ratio and fills the circle */
+}
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items to the top */
+  min-height: 100vh; /* Ensure full viewport height */
+}
+.left-panel {
+  width: 250px; /* Adjust as needed */
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+.right-panel {
+  flex: 1; /* Takes up remaining space */
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  width: 300px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #e4efe5; 
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 200;
+}
+.button:hover{
+    background-color: rgb(147, 234, 139);
+    color: white;
+}
+.right-panel:hover{
+  background: white;
+  color: green;
+}
+</style>
 </head>
 <body>
-    <div class="containerr bg-light">
-        <div class="profile-container">
-            <div class="header">
-              <span class="account-type">student.refactory.academy</span>
-              <img src="images/llaa.jpg" alt="Profile Picture" class="profile-picture">
+  <div style="opacity: 90%;" class="wrapper ">
+    <div class="container">
+      <div class="left-panel">
+        <div class="profile-info">
+          <img src="images/myimage.jpg" alt="Profile Picture" width="200" class="rounded-image"> <br> <br>
+          <span style="color: aliceblue;">Lauryn Hope</span><br>
+          <span style="color: aliceblue;">laurynhope29@gmail.com</span><br><br>
+
+          <button class="button">update your pic</button><br><br>
+          <input type="file" id="file" name="file"><br><br>
+
+          <button class="button">update profile</button><br><br>
+          <a href="index.html">
+            <button class="button">logout</button>
+          </a>
+         
+
+        </div>
+      </div>
+      <div class="right-panel">
+        <h2>Update Profile</h2>
+        <form>
+            <div class="form-group">
+                <label for="old_password">Old Password:</label>
+                <input type="password" id="old_password" name="old_password">
             </div>
-            <div class="details bg-light" >
-              <span class="name">Lauryn Hope Tuhaise</span>
-              <span class="email">laurynhope@gmail.com</span>
-              <div class="actions">
-                <button><i class="fas fa-key"></i></button>
-                <button><i class="fas fa-credit-card"></i></button>
-                <button><i class="fas fa-map-marker-alt"></i></button>
-              </div>
+            <div class="form-group">
+                <label for="new_password">New Password:</label>
+                <input type="password" id="new_password" name="new_password">
             </div>
-            <div class="options bg-light">
-              <div class="option">
-                <i class="fas fa-sync"></i>
-                <span>Sync is on</span>
-              </div>
-              <div class="option">
-                <i class="fas.fa-user-cog"></i>
-                <span>Customize profile</span>
-              </div>
-              <div class="option">
-                <i class="fab fa-google"></i>
-                <span>Manage your Google Account</span>
-              </div>
-              <div class="option">
-                <i class="fas fa-times"></i>
-                <span>Close this profile</span>
-              </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password">
             </div>
-          </div>
+
+            <button type="submit" class="button">Update Profile</button>
+            <a href="dash.html">
+            <button type="button" class="button">Go Back</button>
+          </a>
+
+        </form>
+      </div>
     </div>
-
-
-
-    <scrip src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js></script>
-    <script src="css/bootstrap-5.3.3/js/bootstrap.bundle.js"></script>
-    <script src="chart1.js"></script>
+  </div>
 </body>
 </html>
