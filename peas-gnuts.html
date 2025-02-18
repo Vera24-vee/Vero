@@ -8,21 +8,38 @@
         <title>KGL</title>
         <style>
             body{
-                margin-top: 20px;
-            margin-left: 100px;
+            margin-top: 20px;
             margin-bottom: 200px;
             height: fit-content;
+            }
+            footer {
+            background-color: #17814c;
+            color: white;
+            text-align: center;
+            padding: 1px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 70px;
+            }
+            #products{
+                margin-left: 50px;
+            }
+
+            footer a {
+                color: #FFD700;
+                text-decoration: none;
             }
            
         </style>
     </head>
-    <body class="bg-light ">
-        <div class="col-md-9" id="products">
-            <h1>Product details</h1>
+    <body class="bg-light body-secondary ">
+        <div class="col-md-9 " id="products">
+            <h1 class="bg-success text-white text-center"><b>Products details</b></h1>
             <div class="heading mt-4"><h2>Cow peas</h2></div>
             <p>Our [Variety Name] cow peas are prized for their [characteristic, e.g., creamy texture, distinct flavor]. 
                 Grown in [Region], these cow peas are a culinary delight."/p>
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-4">
                     <div class="card">
                         <img src="images/peasa.jpeg" class="img-thumbnail" alt="...">
@@ -91,12 +108,12 @@
 
             </div>
             <a href="products2.html">
-            <button type="button" class="btn btn-primary btn-lg mt-4 mb-10">Go back</button>
+            <button type="button" class="btn btn-success btn-lg mt-4 mb-10">Go back</button>
             </a>
         </div>
-        <footer>
+        <footer class="footer">
             <p>© 2025 Karibu Grocerries. All Rights Reserved.</p>
-            <p>Contact us: <a href="karibugrocerries@gmail.com.com">kariburoceries@gmail.com</a></p>
+            <p>Contact us: <a href="karibugrocerries.com">kariburoceries@gmail.com</a></p>
         </footer>
     </body>
 </html>
